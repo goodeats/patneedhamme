@@ -1,0 +1,190 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+}
+
+body {
+  background: #FFB500;
+}
+
+#page-container {
+  /*position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;*/
+  background: #FFB500;
+}
+
+#nav {
+  width: 100%;
+  padding: 20px;
+  background: #000;
+  text-align: center;
+}
+
+#nav ul {
+  text-align: center;
+  margin: 20px;
+}
+
+#nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.title {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  font-size: 3em;
+}
+
+.header-title {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.bulb {
+  position: absolute;
+  top: -4%;
+  left: 2.2%;
+  width: 45px;
+  height: 45px;
+  z-index: 1;
+  border-radius: 45px;
+  box-shadow: 0 0 70px #FFB500;
+  background: #FFB500;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#fff), to(#FFB500));
+  background: -webkit-radial-gradient(circle, #fff, #FFB500);
+  background: -moz-radial-gradient(circle, #fff, #FFB500);
+  background: -ms-radial-gradient(circle, #fff, #FFB500);
+}
+
+.logo {
+  /*box-shadow: 0 0 40px #FFB500;*/
+  padding: 5px;
+  /*background: #fff;*/
+  border-radius: 45px;
+  width: 1.2em;
+  float: left;
+  position: relative;
+  top: -9px;
+  z-index: 2;
+
+  /* fallback */
+    /*background-color: #FFB500;
+    background-position: center center;
+    background-repeat: no-repeat;*/
+
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+    /*background: -webkit-gradient(radial, center center, 0, center center, 460, from(#fff), to(#FFB500));*/
+
+    /* Safari 5.1+, Chrome 10+ */
+    /*background: -webkit-radial-gradient(circle, #fff, #FFB500);*/
+
+    /* Firefox 3.6+ */
+    /*background: -moz-radial-gradient(circle, #fff, #FFB500);*/
+
+    /* IE 10 */
+    /*background: -ms-radial-gradient(circle, #fff, #FFB500);*/
+
+    /* Opera couldn't do radial gradients, then at some point they started supporting the -webkit- syntax, how it kinda does but it's kinda broken (doesn't do sizing) */
+}
+
+
+.nav-link {
+  text-decoration: none;
+  color: #ffb500;
+  transition: all 0.5s ease;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #fff;
+  text-shadow: 0 0 2px #fff;
+}
+
+#page-content {
+  text-align: center;
+  padding: 5%;
+}
+
+#contact-list {
+  position: absolute;
+  left: 0;
+  float: left;
+  margin-top: 10px;
+  padding: 10px;
+  z-index: 10;
+  background: #d5d5d5;
+  background: rgba(0,0,0,0.2);
+  border-radius: 0 5px 5px 0;
+  text-align: left;
+  color: #000;
+}
+
+#contact-list h3 {
+  margin: -10px;
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 0 5px 5px 0;
+  font-size: 1.5em;
+  /*transition: all 0.8s ease;*/
+}
+
+#contact-list:hover h3 {
+  margin-bottom: 10px;
+  border-radius: 0 5px 0 0;
+}
+
+#contact-list li {
+  margin: 10px 0;
+  list-style: none;
+  display: none;
+  opacity: 0;
+  line-height: 0;
+  transition: all 0.8s ease;
+}
+
+#contact-list:hover li {
+  display: block;
+  opacity: 1;
+  line-height: 1;
+}
+
+#contact-list a {
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease;
+  font-size: 1.2em;
+}
+
+#contact-list a:hover, #contact-list a:focus {
+  color: navy;
+  text-shadow: 0 0 14px #fff;
+}
+
+.blog {
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 100px #fff;
+  border-radius: 45px;
+}
+
+.blog h2 {
+  font-size: 2em;
+  margin: 10px;
+}

@@ -1,0 +1,31 @@
+.social-image {
+  height: 165px;
+  width: 220px;
+  background: rgba(0,0,0,0.5);
+}
+
+.contact-thumbs {
+  width: 100%;
+  /*float: left;*/
+  margin: 5px;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.contact-thumb {
+  display: inline-block;
+  margin: 5%;
+  width: 35%;
+}
+
+.contact-thumb a {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFB500;
+  font-weight: 800;
+}
+
+.contact-link-text {
+  position: absolute;
+}
